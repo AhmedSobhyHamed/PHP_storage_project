@@ -1,0 +1,44 @@
+.bg-dark-50 {
+    background-color:  rgba(var(--bs-dark-rgb),0.2) !important;
+}
+#accessibility{
+    background-image: url(../../htmlh/main/resources/response2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ul {
+    list-style: none;
+}
+ul li p::before {
+    content: '\f46d';
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-inline-end: 1.5rem;
+}
+#notes .col-md-4 , #media .col-md-4 , #manga .col-md-4 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: backgroundanimation 15s ease-in-out infinite;
+    min-height: 320px;
+}
+#notes .col-md-4 {
+    background-image: url(../../htmlh/main/resources/note.png);
+}
+#manga .col-md-4 {
+    background-image: url(../../htmlh/main/resources/manga.png);
+}
+#media .col-md-4 {
+    background-image: url(../../htmlh/main/resources/media.png);
+}
+
+@keyframes backgroundanimation {
+    0% {
+        background-position: left;
+    }
+    50% {
+        background-position: right;
+    }
+    100% {
+        background-position: left;
+    }
+}

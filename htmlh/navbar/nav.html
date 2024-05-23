@@ -1,0 +1,85 @@
+<!-- nav -->
+<!-- logo     home   manga   media   notes   site color     name|image -->
+<!--                           profile  change image  site color   logout -->
+<!-- logo     search bar     name|image -->
+<link rel="stylesheet" href="htmlh/navbar/style.css">
+<nav class="navbar navbar-expand-lg bg-info">
+    <div class="container-fluid px-4">
+        <a class="navbar-brand align-self-start align-self-lg-center" href="#">
+            <img src="<#{{logoimg}}#>" alt="Logo" class="d-inline-block align-text-top">
+            <span class="d-none d-sm-inline">Archive</span>
+        </a>
+        <div class="ms-sm-auto pe-sm-5" id="toggle-section-1">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">manga</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">notes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#site-color" data-bs-toggle="modal" data-bs-target="#color-modal">site color</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <form class="d-none input-group px-0 px-lg-5 me-auto mb-2 mb-lg-0" id="toggle-section-2">
+            <input class="form-control rounded-start-pill" type="search" name="search" placeholder="Search">
+            <button class="btn btn-outline-success rounded-end-pill" type="submit">Search</button>
+        </form>
+        <div class="dropdown align-self-end align-self-lg-center">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="<#{{profileimg}}#>" alt="profile image">
+                <#{{profilename}}#>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="<#{{profilepageurl}}#>">profile</a></li>
+                <!-- <li><a class="dropdown-item" href="#">change image</a></li> -->
+                <li><a class="dropdown-item" href="#site-color" data-bs-toggle="modal" data-bs-target="#color-modal">site color</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="api/logout.php">log out</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- color site modal -->
+<div class="modal fade" id="color-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5 text-capitalize">change site theme</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row g-3">
+                        <div class="col-auto">
+                            <div class="card">
+
+                                <div class="card-body">
+                                    <h5 class="card-title text-capitalize">haloweno</h5>
+                                    <h6 class="card-subtitle text-capitalize mb-2 text-body-secondary">website style</h6>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="htmlh/navbar/develop.js"></script>

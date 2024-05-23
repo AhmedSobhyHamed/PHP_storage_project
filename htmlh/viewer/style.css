@@ -1,0 +1,40 @@
+.mirrored {
+    transform: rotateY(180deg);
+}
+.successonhover:hover {
+    color: var(--bs-success) !important;
+}
+@media (max-width:575px) {
+    .border-end {
+        border: none !important;
+    }
+}
+.imgfram {
+    display: inline-block;
+    /* max-height: 400px; */
+    max-width: 100%;
+}
+textarea {
+    min-height: 7rem !important;
+}
+.bg-dark-50 {
+    background-color:  rgba(var(--bs-dark-rgb),0.5) !important;
+}
+#videoplayer input[type="range"]::-moz-range-thumb {
+    background-color:  rgba(var(--bs-light-rgb),1) !important;
+    height: 0.25rem;
+    width: 0.25rem;
+}
+#videoplayer input[type="range"]::-moz-range-track {
+    height: 0.125rem;
+    background-color:  rgba(var(--bs-light-rgb),0.9) !important;
+}
+#videoplayer .position-absolute{
+    transition: bottom 0.5s;
+}
+.bottom-150 {
+    bottom: -20%;
+}
+.fs-7 {
+    font-size: 0.75rem !important;
+}

@@ -1,0 +1,15 @@
+.navbar img {
+    height: 2rem !important;
+}
+body {
+    scroll-behavior: smooth;
+}
+
+.w-md-25 {
+    width: 100%;
+}
+@media (min-width: 787px) {
+    .w-md-25 {
+        width: 400px;
+    }
+}

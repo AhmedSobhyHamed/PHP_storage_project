@@ -1,0 +1,49 @@
+<ul class="list-group list-group-flush bg-dark" id="view-ul-listgroup">
+    <li class="list-group-item bg-dark">
+        <div class="p-2 mt-4 me-auto d-inline-block position-relative">
+            <a href="wall.php" class="link-underline-opacity-0 link-underline-opacity-25-hover link-warning link-underlin-warning stretched-link">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+                back to wall
+            </a>
+        </div>
+        <div class="d-flex justify-content-center">
+            <span class="badge rounded-pill text-bg-light">
+                <i class="fs-4 fa-solid fa-arrow-right mirrored successonhover ps-5" id="prevpage"></i>
+                <div class="vr mx-2"></div>
+                <i class="fs-4 fa-solid fa-arrow-right successonhover ps-5" id="nextpage"></i>
+            </span>
+        </div>
+        <div class="d-flex justify-content-end">
+            <button type="button" id="deletecard" class="fs-2 text-capitalize btn btn-outline-danger border-0">delete this card
+                <i class="fa-solid fa-trash-can"></i></button>
+        </div>
+    </li>
+</ul>
+<div class="modal fade" id="editmodal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content text-bg-dark">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" class="text-capitalize">edit</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="message-text" class="col-form-label"></label>
+                        <textarea class="form-control text-bg-dark" name=""></textarea>
+                        <input type="hidden" name="req" value="edit">
+                        <input type="hidden" name="type" value="">
+                        <input type="hidden" name="id" value="">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="editmodalbtn">edit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<#{{startupdata}}#>
+<#{{pagefooter}}#>

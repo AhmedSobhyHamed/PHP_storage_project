@@ -1,0 +1,12 @@
+.bg-opacity-50 {
+    --bs-bg-opacity: 0.5;
+}
+.fixed-height-6 {
+    max-height: 6em;
+}
+.fixed-height-15 {
+    max-height: 15em;
+}
+.min-height-img {
+    min-height: 6rem;
+}

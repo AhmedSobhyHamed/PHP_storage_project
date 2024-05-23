@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="htmlh/sidebar/style.css">
+<div class="container-fluid p-3 border-end border-5 h-100"> 
+    <ul class="list-group list-group-flush" id="sidebar-list">
+    </ul>
+</div>
+<!--     modal -->
+<div class="modal fade" id="add-new-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5 text-capitalize"></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form action="" method="post" id="newform"></form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-success" form="newform" id="mediasubmit">submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="create-new-status" data-bs-backdrop="static" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" data-bs-dismiss="modal"></button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="htmlh/sidebar/develop.js"></script>
+
+
