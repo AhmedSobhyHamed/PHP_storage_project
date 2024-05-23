@@ -1,6 +1,6 @@
 # PHP_storage_project
 
-Websit can store vedios, images, stories or books details and daily notes for users.
+The website can store videos, images, stories or book details, and daily notes for users.
 
 ![](repo-image/name.png)
 
@@ -19,15 +19,15 @@ Websit can store vedios, images, stories or books details and daily notes for us
 
 ## Introduction
 
-This project craeted using vanilla PHP, vanilla JavaScript and Bootstrap css framwork to create a user interface for storing vedios, images, stories or books details and daily notes.
+This project was created using vanilla PHP, vanilla JavaScript, and the Bootstrap CSS framework to create a user interface for storing videos, images, stories or book details, and daily notes.
 <br>
-To use this storage system you must be registered and sign in or regester a new account.
+To use this storage system, you must either sign in if you are already registered, or register a new account.
 <br>
-every user can see his own resources only.
+Each user can see only their own resources.
 <br>
-you can edit any esources when you wish and even delete it.
+You can edit any resources whenever you wish, and you can also delete them.
 <br>
-you can create a new resource of type you want.
+You can create a new resource of any type you want.
 
   <!-- technologies was used with links if available -->
 
@@ -36,33 +36,33 @@ you can create a new resource of type you want.
 ```diff
 - PHP
   - Using pre-made PHP library.
-  - Separate html from PHP.
-  - Easy change content of html template with php.
-  - Class for file handeler with check validation for size and type.
-  - Class for session handeling.
-  - Protect against Session hajaking.
-  - Protect against Session fixation.
-  - mainupolate session sittings from PHP script.
+  - Separate HTML from PHP.
+  - Easy content changes of HTML templates with PHP.
+  - Class for file handler with validation checks for size and type.
+  - Class for session handling.
+  - Protection against session hijacking.
+  - Protection against Session fixation.
+  - Manipulate session settings from PHP script.
   - Using coockies.
-  - create interface for DataBase.
-  - Separate Database routines inside clasess for user and resources.
-  - adopt Object Relational Model approch when creating resources and user classes.
-  - using mySQLi interface to connect to database.
-  - Use hashing and encrypt
+  - Create an interface for the database.
+  - Separate database routines inside classes for users and resources.
+  - Adopt the Object-Relational Model approach when creating resource and user classes.
+  - Using the MySQLi interface to connect to the database.
+  - Utilize hashing and encryption
   - Validate data for every database resource model.
-  - Prevent sql injection.
-  - Using regular expression.
-  - Create custon non-standerd API.
+  - Prevent SQL injection.
+  - Using regular expressions.
+  - Create a custom non-standard API.
 - JavaScript
-  - Async communication using xmlhttprequest.
+  - Asynchronous communication using XMLHttpRequest.
   - Event handling.
-  - DOM manipulate.
-  - Create custom media api.
-  - Form validating.
-  - Using regular expression.
+  - DOM manipulation.
+  - Create a custom media API.
+  - Form validation.
+  - Using regular expressions.
 - SQL
-  - create a user with a restricted permission.
-  - full CRUD system.
+  - Create a user with restricted permissions.
+  - Full CRUD system.
 
 ```
 
@@ -96,7 +96,7 @@ you can create a new resource of type you want.
 2. Clone the repository:
 
    ```sh
-   git clone https://github.com/AhmedSobhyHamed/Laravel_EasyT_project2.git
+   git clone https://github.com/AhmedSobhyHamed/PHP_storage_project.git
    ```
 
 3. Navigate to the project directory:
@@ -142,7 +142,7 @@ you can create a new resource of type you want.
    cp DB_info.example.php  DB_info.php
    ```
 
-6. Runing apache
+6. Runing Apache
 
    ```sh
    sudo systemctl start apache2
@@ -155,7 +155,7 @@ you can create a new resource of type you want.
 ## Usage
 
 <!-- **You can interact with the project via this link**
-[web page on github](https://ahmedsobhyhamed.github.io/Laravel_EasyT_project2/).
+[web page on github](https://ahmedsobhyhamed.github.io/PHP_storage_project/).
 <br> -->
 
 **[see an example for user interaction.[video]](http://youtube.com)**
@@ -173,7 +173,7 @@ you can create a new resource of type you want.
 - framworks and Libraries:
 
   - Bootstrap.
-  - mysqli interface.
+  - MySQLi interface.
   - PHP_HTML-manipulator.
 
     <!-- about the project and a digram of how it work -->
